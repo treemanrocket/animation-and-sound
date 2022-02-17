@@ -11,7 +11,7 @@ public class sound : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-     anim = GetComponent<Animator>();   
+     anim = GetComponent<Animator>(); 
     }
 
    // Update is called once per frame
@@ -24,6 +24,10 @@ void Update()
           anim.SetInteger("State", 1);
 
          }
+      if (Input.GetKey("escape")) 
+     {
+       Application.Quit();
+     }    
 
      if (Input.GetKeyUp(KeyCode.W))
         {
